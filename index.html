@@ -32,7 +32,8 @@ const random = Math.floor(Math.random() * 100) + 1;
             else if (userNumber === random)
             {alert(`Well done ${name}! You win! The number was ${random}`);}
             else {
-            alert("Invalid entry");
+            alert("Invalid entry, try again");
+            break;
             }
         }
 
