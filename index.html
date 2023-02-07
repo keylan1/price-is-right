@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*- Ask the player's name
+- Store a random number between 1 and 100 : 
+const random = Math.floor(Math.random() * 100) + 1;
+- Ask a number to the player (between 1 and 100)
+- If the player's number is over the stored value, log "It is less"
+- If the player's number is under the stored value, log "It is more"
+- If the player's number equals the stored value, log "<player> wins" (where <player> is replaced by the player's name)
+- The game stops when the player wins
+*/
+        let name = prompt("Please enter name");
+        const random = Math.floor(Math.random() * 100) + 1;
+        let userNumber ;
+
+        while (userNumber !== null) {
+            userNumber = +prompt("Please enter a number between 1 and 100");
+            if (userNumber > random) {
+                alert("It is less");
+            }
+            else if (userNumber < random) {
+                alert("It is more");
+            }
+            else if (userNumber === random)
+            {alert(`Well done ${name}! You win! The number was ${random}`);}
+            else {
+            alert("Invalid entry");
+            }
+        }
+
+        /*let firstValue = parseInt(prompt("Select value 1"));
+        let operator = prompt("Select operator");
+        let secondValue = parseInt(prompt("Select value 2"));
+        
+        console.log(`${firstValue}, ${operator}, ${secondValue}`);*/
+
+        /*if (operator === "+") {
+            console.log(firstValue + secondValue);
+        } else if (operator === "-") 
+            {console.log(firstValue - secondValue);}
+        else if (operator === "*")
+            {console.log(firstValue * secondValue);}
+        else if (operator === "/")
+            {console.log(firstValue / secondValue);}
+        else {console.log("Invalid operator");
+        }*/
+
+        
+        /*switch(operator) {
+            case "+":
+                console.log(firstValue + secondValue)
+            break;
+            case "-":
+                console.log(firstValue - secondValue)
+            break;
+            default:
+                console.log("Invalid operator")
+        }*/
+        </script>
+    </body>
+</html>
